@@ -7,9 +7,11 @@
 </script>
 
 <nav
-  class="hidden z-[-1] lg:z-50 navbar w-full bg-transparent lg:flex
+  class="hidden z-[-1] lg:z-50 navbar w-full lg:flex
   justify-between md:px-20 min-[1235px]:px-36 py-5 lg:text-base
-  {$page.url.pathname === '/tyc' ? 'bg-neutral' : 'absolute top-0'}"
+  {$page.url.pathname === '/tyc'
+    ? 'bg-neutral'
+    : 'bg-transparent absolute top-0'}"
 >
   <a href="/">
     <img src={Logo} class="w-44" alt="507BuyServices Logo" />
@@ -29,7 +31,7 @@
 
 <nav
   class="lg:hidden navbar grid place-items-center py-5 top-0 z-[50]
-  {$page.url.pathname === '/tyc' ? 'bg-neutral' : ' bg-transparent absolute'}"
+  {$page.url.pathname === '/tyc' ? 'bg-neutral' : 'bg-transparent absolute'}"
 >
   <a href="/">
     <img src={Logo} class="w-40" alt="Logo" />
