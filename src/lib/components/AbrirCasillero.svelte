@@ -3,6 +3,7 @@
   import axios from "axios";
   import { toast } from "@zerodevx/svelte-toast";
   import { page } from "$app/stores";
+  import { validateAll } from "$lib/utils";
 
   let maxDate = new Date();
   let usuario = {
@@ -30,7 +31,7 @@
   async function crearUsuario(event: Event) {
     registering = true;
     let valid = true;
-    // valid = validateAll(usuario);
+    valid = validateAll(usuario);
     if (valid) {
       usuario.cedula = usuario.cedula.split(" ").join("");
       axios

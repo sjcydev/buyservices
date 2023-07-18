@@ -9,7 +9,7 @@
   import AbrirCasillero from "$lib/components/AbrirCasillero.svelte";
   import WorldPng from "$lib/assets/world.png";
   import Contenedor from "$lib/assets/contenedorMorado.png";
-  import Logo from "$lib/assets/logo.png";
+  import { goto } from "$app/navigation";
 
   let services = [
     {
@@ -71,8 +71,9 @@
         Compra y recibe tus ordenes en un solo lugar a un precio accessible y
         sin costo adicional.
       </p>
-      <button class="btn btn-primary text-white"
-        >Abre tu Casillero Gratis</button
+      <button
+        class="btn btn-primary text-white"
+        on:click={() => goto("/registrar")}>Abre tu Casillero Gratis</button
       >
     </div>
   </div>
@@ -173,7 +174,10 @@
           tus pedidos.
         </p>
       </div>
-      <button class="btn btn-primary text-white">Abre tu casillero</button>
+      <button
+        class="btn btn-primary text-white"
+        on:click={() => goto("/registrar")}>Abre tu casillero</button
+      >
     </div>
     <img
       src={Contenedor}
@@ -192,7 +196,10 @@
     <div class="max-w-md">
       <h1 class="mb-5 text-4xl lg:text-5xl font-bold">Una vez en Miami</h1>
       <p class="mb-5">Le entregamos su paquete en 48 horas!</p>
-      <button class="btn btn-primary text-white">Comprar en Linea Ahora</button>
+      <button
+        class="btn btn-primary text-white"
+        on:click={() => goto("/registrar")}>Comprar en Linea Ahora</button
+      >
     </div>
   </div>
 </div>
@@ -228,13 +235,15 @@
   <div class="collapse collapse-arrow bg-base-100">
     <input type="checkbox" name="my-accordion-2" />
     <div class="collapse-title text-xl font-medium">
-      Mi pedido no ha llegado.
+      Como puedo saber el estado de mis paquetes?
     </div>
     <div class="collapse-content">
       <p>
-        Depende de donde sea el origen de los productos, puede que tarde en
-        llegar a Miami. Una vez que llegue a Miami tendras tus productos listos
-        en Panamá en 48 hora hábiles.
+        Para saber el estado de tus paquetes puedes ir a nuestra sección de <a
+          href="/tracking"
+          class="underline">tracking</a
+        > e introducir el numero de tracking de tus paquetes. Una vez que haya llegado
+        a Miami te lo tendremos listo en Panamá dentro de 2 a 3 días hábiles.
       </p>
     </div>
   </div>
