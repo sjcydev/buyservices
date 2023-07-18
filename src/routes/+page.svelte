@@ -130,7 +130,7 @@
 </div>
 
 <div class="grid place-items-center lg:mt-24">
-  <div class="card w-full max-w-5xl bg-base-100 rounded-none">
+  <div class="card w-full max-w-5xl bg-transparent rounded-none">
     <div class="card-body grid lg:grid-cols-2 place-items-center">
       <div class="p-5">
         <h3 class="text-2xl font-semibold mb-5">Precio Único</h3>
@@ -146,11 +146,6 @@
         <p>/ libra sin volumen</p>
       </div>
     </div>
-    <!-- <img -->
-    <!--   src={PaperPlane} -->
-    <!--   alt="Avion de Papel" -->
-    <!--   class="absolute w-32 -bottom-8 -right-8" -->
-    <!-- /> -->
   </div>
 </div>
 
@@ -249,7 +244,7 @@
   <h3 class="uppercase text-lg text-center font-medium mb-8 tracking-widest">
     Sucursales
   </h3>
-  <div class="grid grid-cols-2 place-items-center">
+  <div class="grid lg:grid-cols-2 place-items-center gap-10 lg:gap-0">
     {#each sucursales as sucursal}
       <div class="text-center max-w-md">
         <h3 class="text-lg font-medium uppercase mb-4 tracking-widest">
@@ -272,9 +267,9 @@
   text-neutral-content"
 >
   <div class="grid grid-flow-col gap-4">
-    <a href="/" class="link link-hover">Tracking</a>
-    <a href="/" class="link link-hover">Abrir Casillero</a>
-    <a href="/" class="link link-hover">Terminos y Condiciones</a>
+    <a href="/tracking" class="link link-hover">Tracking</a>
+    <a href="/registrar" class="link link-hover">Abrir Casillero</a>
+    <a href="/tyc" class="link link-hover">Terminos y Condiciones</a>
   </div>
   <div>
     <p>Copyright © 2023 - Todo los derechos reservados por 507BuyServices</p>
