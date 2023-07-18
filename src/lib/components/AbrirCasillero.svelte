@@ -75,7 +75,7 @@
         <input
           type="text"
           placeholder="Nombre"
-          class="input input-bordered input-secondary w-full"
+          class="input input-bordered input-primary w-full"
           bind:value={usuario.nombre}
           required
         />
@@ -84,7 +84,7 @@
         <input
           type="text"
           placeholder="Apellido"
-          class="input input-bordered input-secondary
+          class="input input-bordered input-primary
         w-full"
           bind:value={usuario.apellido}
           required
@@ -95,7 +95,7 @@
       <input
         type="text"
         placeholder="Correo"
-        class="input input-bordered input-secondary
+        class="input input-bordered input-primary
         "
         bind:value={usuario.correo}
         required
@@ -105,7 +105,7 @@
       <input
         type="text"
         placeholder="Cedula o Pasaporte"
-        class="input input-bordered input-secondary
+        class="input input-bordered input-primary
         "
         bind:value={usuario.cedula}
         required
@@ -115,7 +115,7 @@
       <input
         type="text"
         placeholder="Telefono"
-        class="input input-bordered input-secondary
+        class="input input-bordered input-primary
         "
         bind:value={usuario.telefono}
         required
@@ -129,7 +129,7 @@
           <span class="label-text">Fecha de Nacimiento</span>
         </p>
         <SveltyPicker
-          inputClasses="input input-bordered input-secondary"
+          inputClasses="input input-bordered input-primary"
           format="dd-mm-yyyy"
           placeholder="DD-MM-YYYY"
           todayBtn={false}
@@ -143,7 +143,7 @@
           <span class="label-text">Sexo</span>
         </p>
         <select
-          class="select select-bordered w-full font-medium select-secondary {usuario.sexo ===
+          class="select select-bordered w-full font-medium select-primary {usuario.sexo ===
           ''
             ? 'text-base-300'
             : ''}"
@@ -158,7 +158,7 @@
       </div>
     </div>
     <div class="form-control mt-6">
-      <button type="submit" class="btn btn-secondary">
+      <button type="submit" class="btn btn-primary text-white">
         {#if registering}
           <span class="loading loading-spinner loading-md" />
         {:else}

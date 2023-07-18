@@ -13,10 +13,7 @@
   <a href="/">
     <img src={Logo} class="w-44" alt="507BuyServices Logo" />
   </a>
-  <ul
-    class="menu menu-vertical lg:menu-horizontal lg:text-base
-    text-secondary-content"
-  >
+  <ul class="menu menu-vertical lg:menu-horizontal text-base-100">
     <li><a class="hover:bg-white hover:text-black" href="/">Inicio</a></li>
     <li>
       <a class="hover:bg-white hover:text-black" href="/tracking">Tracking</a>
@@ -30,7 +27,8 @@
 </nav>
 
 <nav
-  class="lg:hidden navbar grid place-items-center py-5 bg-transparent absolute top-0 z-[50]"
+  class="lg:hidden navbar grid place-items-center py-5 bg-transparent absolute
+  top-0 z-[50]"
 >
   <a href="/">
     <img src={Logo} class="w-40" alt="DropCargo Express Logo" />
