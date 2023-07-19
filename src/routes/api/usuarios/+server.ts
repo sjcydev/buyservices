@@ -4,8 +4,16 @@ import { prisma } from "$lib/server/prisma";
 export const POST = async ({ request, fetch }: RequestEvent) => {
   let { usuario } = await request.json();
 
-  let { nombre, apellido, cedula, telefono, correo, sexo, nacimiento } =
-    usuario as Usuario;
+  let {
+    nombre,
+    apellido,
+    cedula,
+    telefono,
+    correo,
+    sexo,
+    nacimiento,
+    sucursal,
+  } = usuario as Usuario;
 
   let currUser = await prisma.usuarios.findUnique({
     where: { correo: correo },
@@ -47,6 +55,7 @@ export const POST = async ({ request, fetch }: RequestEvent) => {
         sexo,
         telefono,
         nacimiento: fecha_nacimiento,
+        sucursal,
       },
     });
     record = await prisma.usuarios.update({
@@ -83,6 +92,7 @@ export const POST = async ({ request, fetch }: RequestEvent) => {
       telefono,
       correo,
       cedula,
+      sucursal,
     }),
   });
 

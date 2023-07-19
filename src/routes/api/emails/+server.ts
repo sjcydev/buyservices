@@ -6,7 +6,7 @@ import CasilleroEmailAdmin from "$lib/components/emails/CasilleroEmailAdmin.svel
 import { render } from "svelte-email";
 
 export const POST = async ({ request }: RequestEvent) => {
-  let { nombre, cedula, correo, telefono, apellido, casillero } =
+  let { nombre, cedula, correo, telefono, apellido, casillero, sucursal } =
     await request.json();
 
   try {
@@ -16,6 +16,7 @@ export const POST = async ({ request }: RequestEvent) => {
         nombre,
         apellido,
         casillero,
+        sucursal,
       },
     });
     const text = render({
@@ -24,6 +25,7 @@ export const POST = async ({ request }: RequestEvent) => {
         nombre,
         apellido,
         casillero,
+        sucursal,
       },
       options: {
         plainText: true,
@@ -71,6 +73,7 @@ export const POST = async ({ request }: RequestEvent) => {
         cedula,
         correo,
         telefono,
+        sucursal,
       },
     });
 
@@ -83,6 +86,7 @@ export const POST = async ({ request }: RequestEvent) => {
         cedula,
         correo,
         telefono,
+        sucursal,
       },
       options: {
         plainText: true,

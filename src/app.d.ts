@@ -18,6 +18,7 @@ declare global {
     telefono: string;
     sexo: string;
     nacimiento: string;
+    sucursal: string;
   }
 }
 

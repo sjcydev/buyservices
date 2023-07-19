@@ -18,8 +18,13 @@
   export let nombre: String;
   export let apellido: String;
   export let casillero: String;
+  export let sucursal: String;
 
   let codigo_de_compania = "BS";
+  if (sucursal === "bethania") {
+    codigo_de_compania = "BSB";
+  }
+
   let nombre_de_compania = "507BuyServices";
   let direccion = {
     direccion1: "7854 NW 46TH ST UNIT 2",

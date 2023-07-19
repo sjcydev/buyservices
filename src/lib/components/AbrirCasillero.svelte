@@ -14,6 +14,7 @@
     nacimiento: "",
     cedula: "",
     sexo: "",
+    sucursal: "",
 
     reset: function () {
       this.nombre = "";
@@ -23,6 +24,7 @@
       this.nacimiento = "";
       this.cedula = "";
       this.sexo = "";
+      this.sucursal = "";
     },
   };
 
@@ -69,6 +71,21 @@
     >
       Abre Tu Casillero
     </h1>
+    <div class="form-control w-full">
+      <p class="label">
+        <span class="label-text">Sucursal</span>
+      </p>
+      <select
+        class="select select-bordered w-full font-medium select-primary
+          {usuario.sucursal === '' ? 'text-base-300' : ''}"
+        bind:value={usuario.sucursal}
+        required
+      >
+        <option disabled selected value="">Sucursal</option>
+        <option value="dorado">El Dorado</option>
+        <option value="bethania">Bethania</option>
+      </select>
+    </div>
     <div
       class="join join-vertical lg:join-horizontal gap-5 justify-between mt-4"
     >
