@@ -14,7 +14,7 @@
     nacimiento: "",
     cedula: "",
     sexo: "",
-    sucursal: "",
+    sucursal: "dorado",
 
     reset: function () {
       this.nombre = "";
@@ -24,7 +24,7 @@
       this.nacimiento = "";
       this.cedula = "";
       this.sexo = "";
-      this.sucursal = "";
+      this.sucursal = "dorado";
     },
   };
 
@@ -76,13 +76,11 @@
         <span class="label-text">Sucursal</span>
       </p>
       <select
-        class="select select-bordered w-full font-medium select-primary
-          {usuario.sucursal === '' ? 'text-base-300' : ''}"
+        class="select select-bordered w-full font-medium select-primary"
         bind:value={usuario.sucursal}
         required
       >
-        <option disabled selected value="">Sucursal</option>
-        <option value="dorado">El Dorado</option>
+        <option selected value="dorado">El Dorado</option>
         <option value="bethania">Bethania</option>
       </select>
     </div>
