@@ -37,14 +37,14 @@
       nombre: "El Dorado",
       direccion:
         'Dos Mares Calle Circunvalación, PH Elite 500 local 2, dentro de "Baixing Market"',
-      maps: "https://goo.gl/maps/jmgXCrDSeYiF68YJA",
-      telefono: "+507 6667-2998",
+      maps: "https://goo.gl/maps/NBeSAhxpbGUw3ad66",
+      telefono: "+507 6858-1291",
     },
     {
       nombre: "Bethania",
       direccion: "Camino Real de Bethania, Casa 604",
-      maps: "https://goo.gl/maps/9NfJv5NT9DHfvydm8",
-      telefono: "+507 6364-6566",
+      maps: "https://goo.gl/maps/VJd2L77z9zBM8kM79",
+      telefono: "+507 6667-2998",
     },
   ];
 </script>
